@@ -1,0 +1,278 @@
+/*
+font-family: 'Merriweather', serif;
+font-family: 'PT Sans Caption', sans-serif;
+*/
+
+html, body {
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	min-width: 280px;
+}
+
+img {
+	display: inline-block;
+}
+
+a {
+	transition: 0.2s ease-out;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+		/*Grid*/
+.container {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.call-4 {
+	width: 360px;
+	margin-right: 15px;
+	float: left;
+}
+
+.call-4:last-clild {
+	margin-right: 0px;
+}
+
+
+		/*Header*/
+.header {
+	background: #102c44;
+	background-image: url("../bg/header.jpg") ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 400px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.header_title {
+	font-size: 56px;
+	line-height: 62px;
+	margin-bottom: 30px;
+	font-family: 'Merriweather', serif;	
+}
+
+.header_slogan {
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.header_arrow {
+	font-size: 48px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -30px
+}
+
+		/*Body*/
+.portfolio {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.title_head {
+	font-size: 46px;
+	margin-bottom: 15px;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+}
+
+.image {
+	margin-bottom: 17px;
+}
+
+.image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.title1 {
+	font-size: 24px;
+	line-height: normal;
+	margin-bottom: 5px;
+}
+
+.description {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.title1 a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #fff;
+}
+
+.title1 a:hover {
+	color: #0052C2;
+	border-color: rgba(0, 82, 194, 0.3);
+}
+
+	/*Body-single-page*/
+
+.portfolio-single-page {
+	padding-top: 50px;
+	padding-bottom: 50px
+}
+
+
+.portfolio-single-page img {
+	margin-bottom: 50px;
+	max-width: 100%;
+	height: auto;
+}
+
+.button-back {
+	font-weight: 700;
+	text-transform: uppercase; 
+	display: inline-block;
+	letter-spacing: 1.6px;
+	border-width: 2px;
+	border-color: #0052C2;
+	border-style: solid;
+	border-radius: 50px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 23px;
+	padding-right: 23px;
+	margin-bottom: 13px;
+	color: #0052C2;
+	transition: 0.2s ease-out;
+}
+
+.button-back:hover {
+	background-color: #0052C2;
+	color: #fff;
+}
+
+
+
+	/*Footer*/
+.footer {
+	background-color: #061634;
+	color: #6479a2;
+	padding-top: 90px;
+	padding-bottom: 190px;
+}
+
+.footer p {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+p.footer_name {
+	font-size: 28px;
+	margin-bottom: 10px;
+	line-height: normal;
+	font-family: "Merriweather", serif;
+}
+
+p.footer_social {
+	color: #fff;
+}
+
+p.footer_social-icons {
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+}
+
+p.footer_social-icons a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+p.footer_social-icons a:hover {
+	color: #ffe400;
+}
+
+.button {
+	font-weight: 700;
+	text-transform: uppercase; 
+	display: inline-block;
+	letter-spacing: 1.6px;
+	border-width: 2px;
+	border-color: #fff;
+	border-style: solid;
+	border-radius: 50px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 23px;
+	padding-right: 23px;
+	margin-bottom: 13px;
+	color: white;
+	transition: 0.2s ease-out;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #061634;
+}
+
+		/*Media*/
+@media (max-width: 1160px) {
+	
+	.header {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.call-4 {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+	}
+
+	.header_title {
+		font-size: 38px;
+		line-height:  48px;
+		margin-bottom: 15px;
+	}
+
+	.header_slogan {
+		font-size: 22px;
+		line-height: 38px;
+	}
+
+	.portfolio {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+
+	.footer {
+		padding-top: 70px;
+		padding-bottom: 60px;
+	}
+}
